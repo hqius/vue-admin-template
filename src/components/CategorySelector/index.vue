@@ -48,7 +48,7 @@
 <script>
 export default {
   name: 'CategorySelector',
-  props: ['isShowList'],
+  props: { isShowList: Boolean },
   data() {
     return {
       category1List: [],
