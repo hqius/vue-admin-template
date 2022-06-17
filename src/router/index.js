@@ -55,39 +55,39 @@ export const constantRoutes = [
     }
     ]
   },
-  // {
-  //   path: '/product',
-  //   name: 'Layout',
-  //   component: Layout,
-  //   redirect: '/product/trademark',
-  //   meta: { title: '商品管理', icon: 'el-icon-s-shop' },
-  //   children: [
-  //     {
-  //       path: '/product/trademark',
-  //       name: 'Trademark',
-  //       component: () => import('@/views/product/trademark'),
-  //       meta: { title: '品牌管理' }
-  //     },
-  //     {
-  //       path: '/product/sku',
-  //       name: 'Sku',
-  //       component: () => import('@/views/product/sku'),
-  //       meta: { title: 'sku管理' }
-  //     },
-  //     {
-  //       path: '/product/spu',
-  //       name: 'Spu',
-  //       component: () => import('@/views/product/spu'),
-  //       meta: { title: 'spu管理' }
-  //     },
-  //     {
-  //       path: '/product/attr',
-  //       name: 'Attr',
-  //       component: () => import('@/views/product/attr'),
-  //       meta: { title: '属性管理' }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/product',
+    name: 'Layout',
+    component: Layout,
+    redirect: '/product/trademark',
+    meta: { title: '商品管理', icon: 'el-icon-s-shop' },
+    children: [
+      {
+        path: '/product/trademark',
+        name: 'Trademark',
+        component: () => import('@/views/product/trademark'),
+        meta: { title: '品牌管理' }
+      },
+      {
+        path: '/product/sku',
+        name: 'Sku',
+        component: () => import('@/views/product/sku'),
+        meta: { title: 'sku管理' }
+      },
+      {
+        path: '/product/spu',
+        name: 'Spu',
+        component: () => import('@/views/product/spu'),
+        meta: { title: 'spu管理' }
+      },
+      {
+        path: '/product/attr',
+        name: 'Attr',
+        component: () => import('@/views/product/attr'),
+        meta: { title: '属性管理' }
+      }
+    ]
+  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
